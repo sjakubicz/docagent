@@ -1,0 +1,33 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: docagent
+      POSTGRES_PASSWORD: docagent
+      POSTGRES_DB: docagent
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docagent"]
+      interval: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    profiles: ["full"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://docagent:docagent@db:5432/docagent
+      LLM_BASE_URL: http://host.docker.internal:11434/v1
+      EMBED_BASE_URL: http://host.docker.internal:11434/v1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

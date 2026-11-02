@@ -1,0 +1,22 @@
+[
+  {"question": "Which antibiotic was the pneumonia patient sent home with?", "filename": "discharge_summary_pneumonia.pdf", "page": 2},
+  {"question": "What was the CURB-65 score on admission?", "filename": "discharge_summary_pneumonia.pdf", "page": 1},
+  {"question": "How did oxygen saturation change during the hospital stay?", "filename": "discharge_summary_pneumonia.pdf", "page": 1},
+  {"question": "When should the chest X-ray be repeated?", "filename": "discharge_summary_pneumonia.pdf", "page": 2},
+  {"question": "What is the maximum daily dose of metformin?", "filename": "metformin_medication_guide.pdf", "page": 1},
+  {"question": "Which vitamin can drop with long-term diabetes medication?", "filename": "metformin_medication_guide.pdf", "page": 1},
+  {"question": "Should metformin be paused before a CT scan with contrast?", "filename": "metformin_medication_guide.pdf", "page": 1},
+  {"question": "What was the LDL cholesterol result?", "filename": "lipid_panel_lab_report.pdf", "page": 1},
+  {"question": "Is the patient's good cholesterol too low?", "filename": "lipid_panel_lab_report.pdf", "page": 1},
+  {"question": "When should the lipid panel be repeated?", "filename": "lipid_panel_lab_report.pdf", "page": 1},
+  {"question": "What blood pressure target was set?", "filename": "hypertension_care_plan.pdf", "page": 1},
+  {"question": "What side effect of lisinopril should be reported?", "filename": "hypertension_care_plan.pdf", "page": 1},
+  {"question": "How much salt per day is allowed?", "filename": "hypertension_care_plan.pdf", "page": 2},
+  {"question": "Which blood pressure reading needs emergency care?", "filename": "hypertension_care_plan.pdf", "page": 2},
+  {"question": "What should I do when my peak flow is between 50 and 80 percent?", "filename": "asthma_action_plan.pdf", "page": 1},
+  {"question": "What is the personal best peak flow?", "filename": "asthma_action_plan.pdf", "page": 1},
+  {"question": "When is it a medical emergency for an asthma patient?", "filename": "asthma_action_plan.pdf", "page": 1},
+  {"question": "How long should ice be applied after knee surgery?", "filename": "knee_surgery_instructions_scan.pdf", "page": 1},
+  {"question": "When are the stitches taken out?", "filename": "knee_surgery_instructions_scan.pdf", "page": 1},
+  {"question": "How much paracetamol can be taken per day after the operation?", "filename": "knee_surgery_instructions_scan.pdf", "page": 1}
+]
